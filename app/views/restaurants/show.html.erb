@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h1>name: <%= @restaurant.name %></h1>
+  <p>where: <%= @restaurant.address %></p>
+  <p>category: <%= @restaurant.category %></p>
+
+
+  <%= link_to "See the list", restaurants_path %> |
+  <%= link_to "Update", edit_restaurant_path(@restaurant) %>
+</div>
